@@ -1,5 +1,6 @@
 import useFetch from "./useFetch";
 import Cards from "./cards";
+import Filter from "./FilterSection/filter";
 
 
 export default function Products(){
@@ -22,14 +23,17 @@ export default function Products(){
 
     return(
         <>
-        <div className="relative m-35">
-            <div className="text-right w-3/4 py-5 mb-5">
+        <div className="relative mx-5 mt-35 lg:mt-35 lg:mx-35">
+            {/* <div className="w-3/6 h-dvh bg-white rounded-2xl p-5 sticky top-24 block lg:hidden">
+                    <Filter />
+                </div> */}
+            <div className="text-center lg:text-right w-full lg:w-3/4 py-5 mb-5">
                 <h1 className=" font-semibold text-2xl">{internshipsArray.length} Total Interships</h1>
                 <p className="text-xs mt-5">Latest summer Internships in India</p>
             </div>
             <div id="main-content" className="flex gap-5">
-                <div className="w-2/5 max-h-fit border sticky top-24">
-                    <h1>Filters</h1>
+                <div className="xl:w-3/6 h-dvh bg-white rounded-2xl p-5 sticky top-24 hidden lg:block">
+                    <Filter />
                 </div>
                 <div className="w-full flex flex-col gap-5">
                     <Cards data = {internshipsArray}/>

@@ -1,5 +1,7 @@
 import Navbar from "./component/navbar"
 import Products from "./component/product"
+import Faq from "./component/faq"
+import StarRating from "./component/rating"
 
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
     <>
       <Navbar />
       <Products />
+      <Faq />
+      <StarRating />
     </>
   )
 }
