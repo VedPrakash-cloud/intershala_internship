@@ -1,16 +1,11 @@
 import { RiFilterLine } from "@remixicon/react";
 import { useState } from "react";
 
-export default function Filter() {
-  const [profile, setProfile] = useState("");
-  const [location, setLocation] = useState("");
-  const [salary, setSalary] = useState(0);
-  const [date, setDate] = useState("");
-  const [duration, setDuration] = useState("");
+export default function Filter({profile, setProfile, location, setLocation, salary, setSalary, date, setDate, duration, setDuration}) {
   const [clear, setClear] = useState(true);
 
 const handleStipend = (val)=>{
-    // const number = parseInt(val)*1000;
+    
     setSalary(val)
 }
 
@@ -55,7 +50,7 @@ const handleStipend = (val)=>{
           min="0"
           max="10"
           step="2"
-          value={salary || 0}
+          value={salary}
           onChange={(e) => handleStipend(parseInt(e.target.value))}
           className="w-full h-1 bg-gray-200 outline-none rounded-lg appearance-none cursor-pointer my-2 accent-[#008BDC] custom-slider"
           style={{

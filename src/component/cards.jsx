@@ -15,7 +15,7 @@ export default function Cards({ data }) {
           key={item.id}
           className="flex justify-between gap-5 p-10 border border-transparent rounded-2xl bg-white shadow-md cursor-pointer hover:scale-102 duration-300 ease-linear static overflow-hidden"
         >
-          <div className="w-50">
+          <div>
             <h1 className="font-semibold text-sm lg:text-xl">
               {item.title}({item.profile_name})
             </h1>

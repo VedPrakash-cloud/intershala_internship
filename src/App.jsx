@@ -6,6 +6,7 @@ import Courses from "./component/courses"
 import Footer from "./component/footer"
 
 
+
 function App() {
 
   return (
