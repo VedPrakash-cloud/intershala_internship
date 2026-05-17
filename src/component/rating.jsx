@@ -14,14 +14,13 @@ import { Carousel } from "react-responsive-carousel";
 
 export default function StarRating() {
   return (
-    <>
-      <div className="flex items-center-safe bg-[#edf5ff] py-15 px-5">
-        <div className="w-2/5 border">
+      <div className="grid md:flex items-center-safe bg-[#edf5ff] py-15 lg:px-5 overflow-hidden">
+        <div className="w-2/5 m-10">
           <RiDoubleQuotesL
             size={60}
             className="bg-sky-200 rounded-full text-[#006bc2] p-2"
           />
-          <h1 className="my-5 text-4xl/10 font-semibold ">
+          <h1 className="my-5 text-2xl/9 lg:text-4xl/10 text-wrap font-semibold w-75 lg:w-full">
             Join the pool of 21Mn+ students and get started with your career
           </h1>
           <p className="uppercase my-5">play store rating</p>
@@ -37,7 +36,7 @@ export default function StarRating() {
             </a>
           </div>
         </div>
-        <div className="w-3/5 border h-96">
+        <div className="w-3/5 h-96">
           <Carousel>
             <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
@@ -50,7 +49,7 @@ export default function StarRating() {
               </div>
               <img src={review1} alt="review1" style={{width:"200px"}} />
             </div>
-            <div>
+            <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
                 <h1>I landed a job at Amazon</h1>
                 <p>
@@ -63,9 +62,9 @@ export default function StarRating() {
                   helped me with everything.
                 </p>
               </div>
-              <img src={review2} alt="review2" />
+              <img src={review2} alt="review2" style={{width:"200px"}} />
             </div>
-            <div>
+            <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
                 <h1>Placement guarantee works</h1>
                 <p>
@@ -77,9 +76,9 @@ export default function StarRating() {
                   it, I got an internship.
                 </p>
               </div>
-              <img src={review3} alt="review3" />
+              <img src={review3} alt="review3" style={{width:"200px"}} />
             </div>
-            <div>
+            <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
                 <h1>First choice for job search</h1>
                 <p>
@@ -90,9 +89,9 @@ export default function StarRating() {
                   explore. would be looking forward for more opportunities.
                 </p>
               </div>
-              <img src={review4} alt="review4" />
+              <img src={review4} alt="review4" style={{width:"200px"}} />
             </div>
-            <div>
+            <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
                 <h1>Great platform for upskilling</h1>
                 <p>
@@ -102,9 +101,9 @@ export default function StarRating() {
                   course with Internshala Trainings.
                 </p>
               </div>
-              <img src={review5} alt="review5" />
+              <img src={review5} alt="review5" style={{width:"200px"}} />
             </div>
-            <div>
+            <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
                 <h1>Got an internship at Flipkart</h1>
                 <p>
@@ -117,9 +116,9 @@ export default function StarRating() {
                   graduation. The office is huge. I love it here.
                 </p>
               </div>
-              <img src={review6} alt="review6" />
+              <img src={review6} alt="review6" style={{width:"200px"}} />
             </div>
-            <div>
+            <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
                 <h1>Good support and doubt solving</h1>
                 <p>
@@ -130,9 +129,9 @@ export default function StarRating() {
                   from sharing placement opportunities to interview preparation.
                 </p>
               </div>
-              <img src={review7} alt="review7" />
+              <img src={review7} alt="review7" style={{width:"200px"}} />
             </div>
-            <div>
+            <div className="flex flex-col text-left justify-between h-84 w-96 rounded-4xl bg-white p-5">
               <div>
                 <h1>Got hired for 4 internships</h1>
                 <p>
@@ -141,11 +140,10 @@ export default function StarRating() {
                   are looking for internships and jobs
                 </p>
               </div>
-              <img src={review8} alt="review8" />
+              <img src={review8} alt="review8" style={{width:"200px"}} />
             </div>
           </Carousel>
         </div>
       </div>
-    </>
   );
 }

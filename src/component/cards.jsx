@@ -15,12 +15,12 @@ export default function Cards({ data }) {
           key={item.id}
           className="flex justify-between gap-5 p-10 border border-transparent rounded-2xl bg-white shadow-md cursor-pointer hover:scale-102 duration-300 ease-linear static"
         >
-          <div>
-            <h1 className="font-semibold text-xl">
+          <div className="w-50">
+            <h1 className="font-semibold text-sm lg:text-xl">
               {item.title}({item.profile_name})
             </h1>
             <p className="text-[#8a8a8a] text-sm">{item.company_name}</p>
-            <div className="flex gap-5 my-2">
+            <div className="grid lg:flex gap-2 lg:gap-5 my-2">
               <span className="flex items-center-safe gap-2 max-w-fit text-xs lg:text-sm">
                 <RiMapPinLine size={15} />{" "}
                 {item.location_names.length > 0
@@ -35,7 +35,7 @@ export default function Cards({ data }) {
                 <RiCalendarLine size={15} /> {item.duration}
               </span>
             </div>
-            <div className="flex items-center-safe gap-2 text-sm">
+            <div className="flex items-center-safe gap-2 text-xs lg:text-sm">
               <RiProfileLine size={15} />
               <p className="my-2">{item.url}</p>
             </div>
