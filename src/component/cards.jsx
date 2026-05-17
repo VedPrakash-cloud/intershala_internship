@@ -51,6 +51,7 @@ export default function Cards({ data }) {
             }}
             alt={item.company_name}
             width={50}
+            height={50}
             className="opacity-50 max-h-fit bg-[#f0f6ff] p-3 rounded-lg shadow-2xs inset-shadow-2xs shadow-gray-400/30"
           />
         </div>
